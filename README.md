@@ -8,6 +8,8 @@ L'installation et la configuration peuvent être faites de deux manières :
 
 ## Mise en route via commandes linux
 
+- se connecter à la machine en tant que qu'utilisateur `root`, via `sudo su` par exemple
+
 ### Installations
 
 - installer les paquets `apt` nécessaires
