@@ -4,7 +4,7 @@ Dépôt pour installation et mise en route d'un QFieldCloud auto-hébergé sur m
 
 L'installation et la configuration peuvent être faites de deux manières : 
 - soit via commandes linux dans le terminal
-- soit via exécution de playbooks ansible
+- soit via exécution de playbooks ansible (pas encore implémenté)
 
 ## Mise en route via commandes linux
 
@@ -139,7 +139,7 @@ sudo cp /etc/letsencrypt/live/${QFIELDCLOUD_HOST}/fullchain.pem ./conf/nginx/cer
 docker compose up nginx -d --build
 ```
 
-## Installation via ansible
+## Installation via ansible (pas encore implémenté)
 
 - installer ansible
 
