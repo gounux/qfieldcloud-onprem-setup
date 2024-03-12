@@ -68,7 +68,7 @@ git clone --recurse-submodules https://github.com/opengisch/qfieldcloud.git
 
 ```sh
 cd /opt/qfieldcloud
-git checkout -b v0.25.0
+git checkout v0.25.0
 ```
 
 ### Configuration du serveur QFieldCloud
