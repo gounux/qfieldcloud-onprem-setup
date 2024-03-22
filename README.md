@@ -1,6 +1,6 @@
 # QFieldCloud on-premise setup
 
-Dépôt pour installation et mise en route d'un QFieldCloud auto-hébergé sur machine linux
+Dépôt pour installation et mise en route d'un QFieldCloud auto-hébergé sur machine linux (Debian)
 
 L'installation et la configuration peuvent être faites de deux manières : 
 - soit via commandes linux dans le terminal
@@ -18,7 +18,9 @@ L'installation et la configuration peuvent être faites de deux manières :
 apt install -y sudo git certbot pwgen pass keepass2
 ```
 
-- installer `docker` en suivant [la documentation officielle](https://docs.docker.com/engine/install/debian/) résumée ici :
+#### Installation de docker
+
+- installer `docker` en suivant [la documentation officielle sur debian](https://docs.docker.com/engine/install/debian/) résumée ici :
 
 ```sh
 sudo apt-get install ca-certificates curl gnupg
@@ -64,11 +66,11 @@ cd /opt
 git clone --recurse-submodules https://github.com/opengisch/qfieldcloud.git
 ```
 
-- basculer sur la branche de la dernière version dispo
+- basculer sur le tag de la version désirée (la dernière est la v0.26.3)
 
 ```sh
 cd /opt/qfieldcloud
-git checkout v0.25.0
+git checkout v0.26.3
 ```
 
 ### Configuration du serveur QFieldCloud
@@ -101,7 +103,7 @@ docker compose up -d --build
 
 ```sh
 docker compose exec app python manage.py migrate
-docker compose run app python manage.py collectstatic --noinput3
+docker compose run app python manage.py collectstatic --noinput
 docker compose run app python manage.py createsuperuser --username admin --email admin@mon.domain
 ```
 
