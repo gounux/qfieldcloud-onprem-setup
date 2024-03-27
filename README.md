@@ -62,7 +62,7 @@ su qfc
 - cloner le dépôt qfieldcloud
 
 ```sh
-cd /opt
+cd ~
 git clone --recurse-submodules https://github.com/opengisch/qfieldcloud.git
 ```
 
