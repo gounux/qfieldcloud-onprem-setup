@@ -43,7 +43,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 ```sh
 QFC_ID=666
-adduser --shell /bin/bash --uid ${QFC_ID} --gid ${QFC_ID} qfc
+adduser --shell /bin/bash --uid ${QFC_ID} qfc
 ```
 
 - ajouter l'utilisateur `qfc` aux groupe `sudo` et `docker`
